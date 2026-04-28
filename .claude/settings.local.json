@@ -22,7 +22,17 @@
       "Bash(mv '/Users/alihassan/Desktop/motara/app/blog/[slug]/page.tsx' '/Users/alihassan/Desktop/motara/app/blog/[slug]/PostClient.tsx')",
       "Bash(mv '/Users/alihassan/Desktop/motara/app/admin/cars/[id]/edit/page.tsx' '/Users/alihassan/Desktop/motara/app/admin/cars/[id]/edit/EditClient.tsx')",
       "Bash(GITHUB_PAGES=true NEXT_PUBLIC_BASE_PATH=/motara npm run build)",
-      "Bash(git add *)"
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)",
+      "Bash(gh --version)",
+      "Bash(gh auth *)",
+      "Bash(gh api *)",
+      "Bash(gh repo *)",
+      "Bash(gh run *)",
+      "Bash(curl -sIL https://de-ali.github.io/motara/)",
+      "Bash(curl -sIL https://de-ali.github.io/motara/cars/toyota-land-cruiser-2020-vxr/)",
+      "Bash(git commit -m 'Fix admin login redirect on static export *)"
     ]
   }
 }

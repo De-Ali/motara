@@ -1,7 +1,9 @@
 'use client';
 import Link from 'next/link';
-import { usePathname, useRouter } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
+
+const BASE = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
 import {
   LayoutDashboard, Car, Inbox, BarChart3, LogOut, Menu, X, ChevronLeft, ExternalLink, RefreshCw, ShieldCheck, Settings as SettingsIcon
 } from 'lucide-react';
@@ -23,13 +25,14 @@ export default function AdminShell({ children }: { children: React.ReactNode }) 
   const { user, loading, signOut } = useAdminAuth();
   const { reset } = useAdminStore();
   const path = usePathname() ?? '';
-  const router = useRouter();
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
     if (loading) return;
-    if (!user && path !== '/admin/login') router.replace('/admin/login');
-  }, [user, loading, path, router]);
+    if (!user && path !== '/admin/login') {
+      window.location.assign(`${BASE}/admin/login/`);
+    }
+  }, [user, loading, path]);
 
   if (path === '/admin/login') return <>{children}</>;
   if (loading) return <div className="min-h-screen grid place-items-center text-sm text-[rgb(var(--muted))]">Loading…</div>;
@@ -79,7 +82,7 @@ export default function AdminShell({ children }: { children: React.ReactNode }) 
         </button>
         <button
           type="button"
-          onClick={() => { signOut(); router.replace('/admin/login'); }}
+          onClick={() => { signOut(); window.location.assign(`${BASE}/admin/login/`); }}
           className="w-full flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm text-white/80 hover:bg-white/10 hover:text-white"
         >
           <LogOut className="h-4 w-4" /> Sign out

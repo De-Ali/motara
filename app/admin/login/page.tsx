@@ -1,29 +1,33 @@
 'use client';
 import { useEffect, useState } from 'react';
-import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { Lock, ArrowRight, Sparkles } from 'lucide-react';
 import { useAdminAuth } from '@/lib/admin-auth';
 
+const BASE = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
+const adminUrl = () => `${BASE}/admin/`;
+
 export default function AdminLoginPage() {
   const { user, loading, signIn } = useAdminAuth();
-  const router = useRouter();
   const [u, setU] = useState('admin');
   const [p, setP] = useState('motara');
   const [err, setErr] = useState('');
   const [busy, setBusy] = useState(false);
 
   useEffect(() => {
-    if (!loading && user) router.replace('/admin');
-  }, [loading, user, router]);
+    if (!loading && user) window.location.assign(adminUrl());
+  }, [loading, user]);
 
   const submit: React.FormEventHandler = async (e) => {
     e.preventDefault();
     setErr(''); setBusy(true);
     const ok = await signIn(u, p);
+    if (ok) {
+      window.location.assign(adminUrl());
+      return;
+    }
     setBusy(false);
-    if (ok) router.replace('/admin');
-    else setErr('Enter any username and password to continue (mock auth).');
+    setErr('Enter any username and password to continue (mock auth).');
   };
 
   return (
