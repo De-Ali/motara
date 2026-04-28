@@ -1,0 +1,282 @@
+{
+  "brand": { "name": "Motara Auto", "tagline": "Oman's most transparent certified used cars" },
+  "nav": {
+    "home": "Home",
+    "cars": "Cars",
+    "compare": "Compare",
+    "services": "Services",
+    "about": "About",
+    "blog": "Blog",
+    "contact": "Contact",
+    "favorites": "Favorites",
+    "admin": "Admin"
+  },
+  "common": {
+    "search": "Search cars",
+    "viewAll": "View all",
+    "viewDetails": "View details",
+    "save": "Save",
+    "saved": "Saved",
+    "remove": "Remove",
+    "compare": "Compare",
+    "comparing": "Comparing",
+    "callForPrice": "Call for price",
+    "from": "From",
+    "to": "to",
+    "year": "Year",
+    "make": "Make",
+    "model": "Model",
+    "price": "Price",
+    "mileage": "Mileage",
+    "fuel": "Fuel",
+    "transmission": "Transmission",
+    "body": "Body",
+    "color": "Color",
+    "seats": "Seats",
+    "engine": "Engine",
+    "origin": "Origin",
+    "warranty": "Warranty",
+    "status": "Status",
+    "available": "Available",
+    "reserved": "Reserved",
+    "sold": "Sold",
+    "months": "months",
+    "reset": "Reset",
+    "apply": "Apply",
+    "filter": "Filter",
+    "filters": "Filters",
+    "sort": "Sort",
+    "results": "results",
+    "loading": "Loading…",
+    "loadMore": "Load more",
+    "showAll": "Show all",
+    "showLess": "Show less",
+    "close": "Close",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "submit": "Submit",
+    "name": "Full name",
+    "phone": "Phone number",
+    "email": "Email",
+    "message": "Message",
+    "date": "Preferred date",
+    "time": "Preferred time",
+    "send": "Send",
+    "sending": "Sending…",
+    "yes": "Yes",
+    "no": "No"
+  },
+  "hero": {
+    "eyebrow": "Trusted in Muscat · Imported · Inspected · Warranted",
+    "title": "Buy a used car you can actually trust.",
+    "subtitle": "Every Motara car is imported, refurbished by our team, and certified through a 50-point inspection — with photos, repair history, and warranty included.",
+    "ctaPrimary": "Browse cars",
+    "ctaSecondary": "Talk on WhatsApp",
+    "stat1Label": "Cars sold",
+    "stat2Label": "Inspection points",
+    "stat3Label": "Avg. delivery",
+    "stat4Label": "Customer rating"
+  },
+  "search": {
+    "placeholder": "Toyota, Land Cruiser, SUV…",
+    "anyMake": "Any make",
+    "anyBody": "Any body",
+    "maxPrice": "Max price",
+    "go": "Find cars"
+  },
+  "usp": {
+    "title": "Why Motara",
+    "subtitle": "What makes us different from generic classifieds.",
+    "items": [
+      { "title": "50-point inspection", "body": "Every car is documented across exterior, interior, mechanical, electrical, and a full road test." },
+      { "title": "Transparent repair history", "body": "Photos at every stage — from arrival to handover. No hidden surprises." },
+      { "title": "Warranty included", "body": "3 to 6 months of coverage on every Motara-verified car." },
+      { "title": "WhatsApp-first", "body": "Talk to a real person within 30 seconds. No spam, no pressure." },
+      { "title": "Bilingual & local", "body": "Full Arabic and English support, with team based in Muscat." },
+      { "title": "Fair, fixed pricing", "body": "Prices include VAT. No haggling games. What you see is what you pay." }
+    ]
+  },
+  "process": {
+    "title": "How a Motara car becomes yours",
+    "subtitle": "Four steps. No shortcuts.",
+    "steps": [
+      { "title": "Sourced", "body": "Hand-picked from trusted auctions in the US, Japan, and the UAE." },
+      { "title": "Inspected", "body": "50-point inspection on arrival. Damage, wear, and history documented." },
+      { "title": "Refurbished", "body": "Repairs done in-house with OEM parts. Every step photographed." },
+      { "title": "Delivered", "body": "Test drive at our Muscat showroom, then drive home with warranty." }
+    ]
+  },
+  "featured": {
+    "title": "Featured this week",
+    "subtitle": "Hand-picked. Inspected. Ready to drive."
+  },
+  "testimonials": {
+    "title": "What our customers say",
+    "subtitle": "Real Motara owners. Real reviews."
+  },
+  "blogTeaser": {
+    "title": "From the blog",
+    "subtitle": "Buying guides, import explainers, and Oman-specific tips."
+  },
+  "ctaBand": {
+    "title": "Found something you like?",
+    "body": "Reserve it on WhatsApp in under a minute. No commitment.",
+    "button": "Open WhatsApp"
+  },
+  "carDetail": {
+    "tabsOverview": "Overview",
+    "tabsSpecs": "Specifications",
+    "tabsInspection": "50-Point Inspection",
+    "tabsRepair": "Repair history",
+    "tabsWarranty": "Warranty",
+    "tabsLocation": "Location",
+    "scarcity": "{count} people inquired about this car this week",
+    "trustStrip": "Inspected · Warranted · ROP-registered",
+    "bookTestDrive": "Book a test drive",
+    "callNow": "Call now",
+    "whatsapp": "WhatsApp",
+    "saveCar": "Save car",
+    "addToCompare": "Add to compare",
+    "inspectionScore": "Inspection score",
+    "outOf": "out of 100",
+    "exterior": "Exterior",
+    "interior": "Interior",
+    "mechanical": "Mechanical",
+    "electrical": "Electrical",
+    "roadtest": "Road test",
+    "passed": "Passed",
+    "repaired": "Repaired",
+    "noted": "Noted",
+    "stages": {
+      "received": "Received",
+      "diagnosis": "Diagnosis",
+      "repair": "Repair",
+      "final": "Final inspection"
+    },
+    "warrantyTitle": "{months}-month warranty included",
+    "warrantyCovers": "Covers engine, transmission, drivetrain, and major electrical.",
+    "relatedTitle": "Similar cars you may like"
+  },
+  "filters": {
+    "title": "Filter cars",
+    "anyMake": "Any make",
+    "priceRange": "Price (OMR)",
+    "yearRange": "Year",
+    "mileageMax": "Max mileage (km)",
+    "fuel": "Fuel",
+    "transmission": "Transmission",
+    "body": "Body type",
+    "reset": "Reset filters",
+    "apply": "Apply",
+    "noResultsTitle": "No cars match these filters",
+    "noResultsBody": "Try resetting filters or browsing all cars."
+  },
+  "sort": {
+    "newest": "Newest",
+    "priceAsc": "Price · low to high",
+    "priceDesc": "Price · high to low",
+    "yearDesc": "Year · newest",
+    "mileageAsc": "Mileage · low to high"
+  },
+  "compare": {
+    "title": "Compare up to 3 cars",
+    "empty": "Add cars from the listings to compare them side-by-side.",
+    "diff": "Differences highlighted",
+    "remove": "Remove",
+    "max": "You can compare up to 3 cars at a time."
+  },
+  "favorites": {
+    "title": "Your saved cars",
+    "empty": "No favorites yet. Tap the heart on any car to save it."
+  },
+  "testDrive": {
+    "title": "Book a test drive",
+    "subtitle": "Pick a slot. We'll confirm on WhatsApp.",
+    "namePh": "Your name",
+    "phonePh": "+968 xxxx xxxx",
+    "notesPh": "Anything we should know?",
+    "submit": "Request test drive",
+    "successTitle": "Request received",
+    "successBody": "Our team will confirm your slot on WhatsApp shortly."
+  },
+  "contact": {
+    "title": "Visit us in Muscat",
+    "subtitle": "Or message us — we usually reply within 5 minutes.",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "hours": "Hours",
+    "hoursValue": "Sat–Thu · 9:00 – 21:00 · Fri · 16:00 – 21:00",
+    "formTitle": "Send us a message",
+    "subjectPh": "Subject",
+    "messagePh": "How can we help?",
+    "send": "Send message"
+  },
+  "about": {
+    "title": "Built on transparency",
+    "lead": "Motara Auto is a Muscat-based dealership specialising in imported, refurbished, and certified used cars. We control every step — sourcing, repair, and delivery — so you don't have to gamble on a stranger's listing.",
+    "valuesTitle": "What we stand for",
+    "values": [
+      { "title": "Honest condition grading", "body": "If a car has been repaired, we tell you. With photos." },
+      { "title": "Fair pricing", "body": "No haggling games. Prices include VAT and a real warranty." },
+      { "title": "Fast service", "body": "WhatsApp replies under 5 minutes during business hours." }
+    ],
+    "certsTitle": "Certifications",
+    "certs": ["Sultanate of Oman trade license", "Royal Oman Police registration", "VAT registration certificate"],
+    "teamTitle": "Meet the team"
+  },
+  "services": {
+    "title": "What we do",
+    "subtitle": "Three services, one promise: cars you can trust.",
+    "items": [
+      { "title": "Vehicle import", "body": "We hand-pick cars from US, Japan, and UAE auctions and import them legally and transparently." },
+      { "title": "Refurbishment", "body": "In-house mechanics, OEM parts, photographed every step. From bodywork to detailing." },
+      { "title": "Warranty plans", "body": "3 to 6 months of warranty included on every Motara-verified car. Extended plans available." }
+    ],
+    "faqTitle": "Common questions",
+    "faqs": [
+      { "q": "Can I inspect the car before buying?", "a": "Yes — every car is available for a free test drive at our Muscat showroom. No commitment." },
+      { "q": "Do you offer financing?", "a": "We work with Bank Muscat and others. We can refer you and help with paperwork." },
+      { "q": "What if I find a problem after purchase?", "a": "Every Motara car comes with at least 3 months of warranty. Bring it back, we fix it." }
+    ]
+  },
+  "blog": {
+    "title": "Guides & insights",
+    "subtitle": "Smarter buying for Oman's used-car market.",
+    "readMin": "{n} min read"
+  },
+  "admin": {
+    "title": "Admin · Phase 2",
+    "subtitle": "The admin dashboard is part of the Phase 2 build. Sign in to preview.",
+    "signIn": "Sign in",
+    "username": "Username",
+    "password": "Password"
+  },
+  "offline": {
+    "title": "You're offline",
+    "body": "We saved the homepage and a few cars for you. Reconnect to see live inventory."
+  },
+  "footer": {
+    "tagline": "Oman's most transparent certified used-car platform.",
+    "explore": "Explore",
+    "company": "Company",
+    "legal": "Legal",
+    "privacy": "Privacy policy",
+    "terms": "Terms of service",
+    "cookie": "Cookies",
+    "copyright": "© 2026 Motara Auto · All rights reserved."
+  },
+  "cookie": {
+    "body": "We use cookies for analytics and to remember your favorites and language. By using this site you agree to our cookie policy.",
+    "accept": "Accept",
+    "decline": "Decline"
+  },
+  "toast": {
+    "saved": "Saved to favorites",
+    "removed": "Removed from favorites",
+    "added": "Added to compare",
+    "compareMax": "You can compare up to 3 cars",
+    "copied": "Link copied"
+  }
+}

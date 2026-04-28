@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(brew list *)",
+      "Bash(python3 -c \"import pypdf\")",
+      "Bash(python3 -c \"import fitz\")",
+      "Bash(pip3 install *)",
+      "Bash(python3 -c ' *)",
+      "Bash(python3 -)",
+      "Bash(npm install *)",
+      "Bash(npm --prefix /Users/alihassan/Desktop/motara list --depth=0)",
+      "Bash(npx tsc *)",
+      "Bash(npm run *)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(curl -s http://localhost:3000/_next/static/css/app/layout.css)",
+      "Bash(curl -s -o /dev/null -w \"status=%{http_code} size=%{size_download}\\\\n\" \"http://localhost:3000/_next/static/css/app/layout.css?v=1777396838105\")",
+      "Bash(curl -sf -o /dev/null http://localhost:3000/admin/login)",
+      "Bash(curl -sf -o /dev/null http://localhost:3000/)",
+      "Bash(git init *)",
+      "Bash(git remote *)",
+      "Bash(mv '/Users/alihassan/Desktop/motara/app/cars/[slug]/page.tsx' '/Users/alihassan/Desktop/motara/app/cars/[slug]/CarDetailClient.tsx')",
+      "Bash(mv '/Users/alihassan/Desktop/motara/app/blog/[slug]/page.tsx' '/Users/alihassan/Desktop/motara/app/blog/[slug]/PostClient.tsx')",
+      "Bash(mv '/Users/alihassan/Desktop/motara/app/admin/cars/[id]/edit/page.tsx' '/Users/alihassan/Desktop/motara/app/admin/cars/[id]/edit/EditClient.tsx')",
+      "Bash(GITHUB_PAGES=true NEXT_PUBLIC_BASE_PATH=/motara npm run build)",
+      "Bash(git add *)"
+    ]
+  }
+}
