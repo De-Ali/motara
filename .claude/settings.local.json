@@ -32,7 +32,10 @@
       "Bash(gh run *)",
       "Bash(curl -sIL https://de-ali.github.io/motara/)",
       "Bash(curl -sIL https://de-ali.github.io/motara/cars/toyota-land-cruiser-2020-vxr/)",
-      "Bash(git commit -m 'Fix admin login redirect on static export *)"
+      "Bash(git commit -m 'Fix admin login redirect on static export *)",
+      "Bash(curl -s \"https://de-ali.github.io/motara/admin/login/\")",
+      "Bash(curl -sI \"https://de-ali.github.io/motara/admin/\")",
+      "Bash(git commit -m 'Fix AdminShell path matching for trailingSlash export *)"
     ]
   }
 }

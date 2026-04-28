@@ -24,17 +24,19 @@ const nav = [
 export default function AdminShell({ children }: { children: React.ReactNode }) {
   const { user, loading, signOut } = useAdminAuth();
   const { reset } = useAdminStore();
-  const path = usePathname() ?? '';
+  const rawPath = usePathname() ?? '';
+  const path = rawPath.replace(/\/+$/, '') || '/';
+  const isLogin = path === '/admin/login';
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
     if (loading) return;
-    if (!user && path !== '/admin/login') {
+    if (!user && !isLogin) {
       window.location.assign(`${BASE}/admin/login/`);
     }
-  }, [user, loading, path]);
+  }, [user, loading, isLogin]);
 
-  if (path === '/admin/login') return <>{children}</>;
+  if (isLogin) return <>{children}</>;
   if (loading) return <div className="min-h-screen grid place-items-center text-sm text-[rgb(var(--muted))]">Loading…</div>;
   if (!user) return null;
 
