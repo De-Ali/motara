@@ -9,7 +9,8 @@
     "blog": "Blog",
     "contact": "Contact",
     "favorites": "Favorites",
-    "admin": "Admin"
+    "admin": "Admin",
+    "deck": "Pitch deck"
   },
   "common": {
     "search": "Search cars",

@@ -13,7 +13,8 @@ import InstallPrompt from './InstallPrompt';
 export default function SiteChrome({ children }: { children: React.ReactNode }) {
   const path = usePathname() ?? '';
   const isAdmin = path.startsWith('/admin');
-  if (isAdmin) return <>{children}</>;
+  const isDeck = path.startsWith('/presentation');
+  if (isAdmin || isDeck) return <>{children}</>;
   return (
     <>
       <SkipLink />

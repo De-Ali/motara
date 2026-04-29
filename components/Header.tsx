@@ -16,7 +16,8 @@ const links = [
   { href: '/services', key: 'nav.services' },
   { href: '/about', key: 'nav.about' },
   { href: '/blog', key: 'nav.blog' },
-  { href: '/contact', key: 'nav.contact' }
+  { href: '/contact', key: 'nav.contact' },
+  { href: '/presentation', key: 'nav.deck' }
 ];
 
 export default function Header() {
