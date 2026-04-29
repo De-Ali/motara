@@ -1,10 +1,14 @@
-/* Motara Auto · Service Worker */
-const VERSION = 'motara-v1';
-const SHELL = ['/', '/cars', '/favorites', '/offline', '/manifest.webmanifest'];
+/* Motara Auto · Service Worker (basePath-aware) */
+const VERSION = 'motara-v2';
+const SCOPE = self.registration ? new URL(self.registration.scope).pathname : '/';
+const url = (p) => `${SCOPE.replace(/\/$/, '')}${p}`;
+const SHELL = [url('/'), url('/cars/'), url('/favorites/'), url('/offline/')];
 
 self.addEventListener('install', (e) => {
   e.waitUntil(
-    caches.open(VERSION).then((c) => c.addAll(SHELL).catch(() => {}))
+    caches.open(VERSION).then((c) => Promise.all(
+      SHELL.map((u) => c.add(u).catch(() => {}))
+    ))
   );
   self.skipWaiting();
 });
@@ -21,7 +25,7 @@ self.addEventListener('activate', (e) => {
 self.addEventListener('fetch', (e) => {
   const req = e.request;
   if (req.method !== 'GET') return;
-  const url = new URL(req.url);
+  const reqUrl = new URL(req.url);
 
   // Network-first for HTML navigations, with offline fallback
   if (req.mode === 'navigate') {
@@ -32,13 +36,13 @@ self.addEventListener('fetch', (e) => {
           caches.open(VERSION).then((c) => c.put(req, copy)).catch(() => {});
           return res;
         })
-        .catch(() => caches.match(req).then((r) => r || caches.match('/offline')))
+        .catch(() => caches.match(req).then((r) => r || caches.match(url('/offline/'))))
     );
     return;
   }
 
-  // Stale-while-revalidate for images / static
-  if (url.origin === self.location.origin || url.hostname.includes('unsplash.com')) {
+  // Stale-while-revalidate for same-origin assets and Unsplash images
+  if (reqUrl.origin === self.location.origin || reqUrl.hostname.includes('unsplash.com')) {
     e.respondWith(
       caches.match(req).then((cached) => {
         const network = fetch(req)

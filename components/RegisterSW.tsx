@@ -6,10 +6,11 @@ export default function RegisterSW() {
     if (typeof window === 'undefined') return;
     if (!('serviceWorker' in navigator)) return;
     if (process.env.NODE_ENV !== 'production') return;
-    // Skip on GitHub Pages — basePath conflicts with SW scope.
-    if (process.env.NEXT_PUBLIC_BASE_PATH) return;
+    const base = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
+    const swUrl = `${base}/sw.js`;
+    const scope = `${base}/`;
     const onLoad = () => {
-      navigator.serviceWorker.register('/sw.js').catch(() => {});
+      navigator.serviceWorker.register(swUrl, { scope }).catch(() => {});
     };
     window.addEventListener('load', onLoad);
     return () => window.removeEventListener('load', onLoad);

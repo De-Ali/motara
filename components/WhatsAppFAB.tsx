@@ -21,7 +21,7 @@ export default function WhatsAppFAB() {
       initial={{ opacity: 0, scale: 0.6 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ delay: 0.4, type: 'spring', stiffness: 200 }}
-      className="fixed bottom-5 end-5 z-40 grid h-14 w-14 place-items-center rounded-full bg-[#25D366] text-white shadow-soft hover:scale-105 transition active:scale-95"
+      className="fixed end-4 z-40 grid h-14 w-14 place-items-center rounded-full bg-[#25D366] text-white shadow-soft hover:scale-105 transition active:scale-95 bottom-[calc(5.5rem+env(safe-area-inset-bottom))] lg:bottom-5 lg:end-5"
     >
       <span className="absolute inset-0 -z-10 rounded-full bg-[#25D366] opacity-50 animate-pulse-ring" />
       <svg viewBox="0 0 24 24" fill="currentColor" className="h-7 w-7">

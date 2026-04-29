@@ -22,7 +22,7 @@ export default function CompareDrawer() {
       initial={{ y: 80, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ type: 'spring', stiffness: 200, damping: 24 }}
-      className="fixed bottom-3 start-3 end-20 sm:end-24 z-40 max-w-3xl mx-auto"
+      className="fixed start-3 end-20 sm:end-24 z-40 max-w-3xl mx-auto bottom-[calc(5.5rem+env(safe-area-inset-bottom))] lg:bottom-3"
     >
       <div className="glass rounded-2xl px-3 py-2 shadow-soft">
         <div className="flex items-center gap-3">
